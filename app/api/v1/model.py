@@ -4,7 +4,6 @@ users = []
 
 class Order:
     '''Class to process the order details'''
-    '''Initializing the order id to zero'''
     order_id = 1
     def __init__(self,name,price,status="Pending"):
         '''Initialising the order details'''
