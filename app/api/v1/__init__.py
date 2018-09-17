@@ -8,6 +8,5 @@ def create_app(config_stage):
     app.config.from_object(app_config[config_stage])
     api = Api(app)
     '''Versioning of the endpoints url'''
-    api.add_resource(OrderDetals, '/api/v1/orders/<int:id>')
     api.add_resource(DisplayAllOrders, '/api/v1/orders')
     return Gabriel
